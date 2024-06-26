@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="version" content="1.0">
+<title>Connection Guide - Pluto</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-3 logo"> <a href="#"><img src="images/logo.png" alt=""></a> </div>
+    <div class="col-xs-12 col-md-5 Launch-App">
+    
+    </div>
+    <div class="col-xs-12 col-md-4 socialicon">
+      <ul class="social-icons-ql">
+        <li><a href="https://twitter.com/plutodex"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://t.me/pluto_ex"><i class="fa fa-send"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section>
+<div class="col-xs-12 col-md-3 leftsitebar">
+    <div class="nav-side-menu scrollbar" id="style-4"> <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+          <li> <a href="/"> 📝 Pluto Intro</a> </li>
+          <li data-toggle="collapse" data-target="#tab1"> 
+          <a href="get-started">🔢 Get Started <span class="arrow"></span></a> 
+          </li>
+          <ul class="sub-menu collapse in" id="tab1">
+            <li><a href="wallet-guide">Create a Wallet</a></li>
+            <li><a href="bep20-guide">Get BEP20 Tokens</a></li>
+            <li class="active"><a href="connection-guide">Connect Your Wallet to Pluto</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab2" class="collapsed"> <a href="help"> 📊 Click Here for Help <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab2">
+            <li><a href="troubleshooting">Troubleshooting Errors</a></li>
+            <li><a href="faq">General FAQ</a></li>
+            <li><a href="unsticking-a-transaction-stuck-as-pending-with-metamask">Fixing Stuck Pending Transactions on MetaMask</a></li>
+            <li><a href="binance-academy-guide">Binance Academy Guide</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab3" class="collapsed"> <a href="contact-us"> 💬 Contact Us <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab3">
+            <li><a href="business-partnerships"> Business Partnerships</a></li>
+            <li ><a href="partnerships"> Partnership</a></li>
+
+            
+            <li><a href="telegram">Social Accounts & Communities</a></li>
+          </ul>
+          
+          <h3 class="sep-title">Products</h3>
+          <li data-toggle="collapse" data-target="#tab4" class="collapsed"> <a href="pluto-Finance">🔄 Exchange <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab4">
+            <li><a href="trade">Token Swaps</a></li>
+            <li><a href="trade-guide">How to Trade</a></li>
+            <li><a href="pluto-Finance">Liquidity Pools</a></li>
+            <li><a href="liquidity-guide">How to Add/Remove Liquidity</a></li>
+          </ul>
+          
+         <li data-toggle="collapse" data-target="#tab5" class="collapsed"> <a href="yield-farming">🚜 Yield Farming <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab5">
+            <li><a href="how-to-use-farms">How to Use Farms</a></li>
+            <li><a href="how-to-use-farms-with-bscscan">How to Use Farms with BscScan</a></li>
+          </ul>  
+          
+        <li data-toggle="collapse" data-target="#tab6" class="collapsed"> <a href="syrup-pool">🍯 Pools <span class="arrow"></span></a> </li>
+        <ul class="sub-menu collapse" id="tab6">
+        <li><a href="syrup-pool-guide">How to Stake in Pools</a></li>
+        <li><a href="auto-compounding">Auto PLU Pool</a></li>
+        <li><a href="syrup-pool-faq">Pool FAQ & Troubleshooting</a></li>
+        </ul>
+
+          
+          
+          
+          <li data-toggle="collapse" data-target="#tab11" class="collapsed"> <a href="info">📈 Analytics (Info) <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab11">
+            <li><a href="pluto-analytics">Analytics</a></li>
+          </ul>
+          
+          <h3 class="sep-title">Tokenomics</h3><li data-toggle="collapse" data-target="#tab13" class="collapsed"> <a href="PLU"><img src="images/PLUicon.png"> PLU <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab13">
+            <li><a href="Moonlight-Finance-tokenomics">Moonlight Tokenomics</a></li>
+            
+          </ul>
+          <h3 class="sep-title">DEVELOPERS</h3>
+          <li data-toggle="collapse" data-target="#tab14" class="collapsed"> <a href="smart-contracts">📑 Smart Contracts </a> </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="col-xs-12 col-md-9 center">
+<div class="senterbox">
+<h1>Connect Your Wallet to Pluto</h1>
+<hr>
+<img style="width:100%;" src="images/Connect-Wallet.png" alt="">
+<p>You've made a wallet and gotten your BEP20 tokens, now you just need to connect your wallet with Pluto and you're good to go!</p>
+<p>Check out the steps below for how to connect each of our recommended wallets to Pluto.</p>
+
+<hr>
+<h3 id="Smartphone">Smartphone/Mobile</h3>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu4">Trust Wallet</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu5">MetaMask</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu6">Token Pocket</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu7">SafePal</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu4" class="tab-pane active"><br>
+<img style="width:50%;" src="images/Trust-Wallet.png" alt="">
+<p>To connect Trust Wallet follow the steps below. Note that Android and iOS devices do not use the same steps!</p>
+<hr>
+<h3>Android</h3>
+<p>1. Open Trust Wallet and tap the DApps button on the bottom of the screen.</p>
+<img src="images/Android.png" alt="">
+<p>Scroll down to "Popular" and tap on "Pluto". You can also find it in "Exchanges".</p>
+<img src="images/PLUswaps.png" alt="">
+<p>1. A new page will open with the Pluto logo and some information. Tap the Connect button.</p>
+<img src="images/PLUswap-conect.png" alt="">
+<p>1. Pluto will open up. If you see a Connect button in the top-right tap that and tap Trust Wallet from the list.</p>
+<blockquote>
+<p><i class="fa fa-exclamation"></i> If you find you are unable to connect at step 4, go back to the DApps menu and find "Pluto" again. Using "PLU Swap" from the "History" section may result in the same problem.</p>
+</blockquote>
+<hr>
+<h3>iOS</h3>
+<p>To connect to Pluto through iOS, Trust Wallet have prepared a detailed guide on using WallteConnect.</p>
+<p>Read the <a href="https://community.trustwallet.com/t/using-walletconnect-to-access-Pluto/212307">Trust Wallet guide to connecting to Pluto via WalletConnect.</a></p>
+<hr>
+<h3>Resources</h3>
+<p><a href="https://trustwallet.com/">Download Trust Wallet</a> (Automatically detects device)</p>
+<p><a href="https://www.binance.com/en/blog/421499824684901157/how-to-set-up-and-use-trust-wallet-for-binance-smart-chain">Trust Wallet Setup Guide</a></p>
+  
+  
+</div>
+
+<div id="menu5" class="tab-pane fade"><br>
+  <img style="width:50%;" src="images/metamask.png" alt="">
+  <p>To connect MetaMask to Pluto follow the steps below.</p>
+  <hr>
+  <h3>Android and iOS</h3>
+  <p>1. Open MetaMask and tap on the burger icon in the top-left.</p>
+  <img src="images/Android-and-IOS.png" alt="">
+  <p>1. Tap Settings in the menu.</p>
+  <img src="images/Settings.png" alt="">
+  <p>1. In the Settings menu, tap on Network.</p>
+  <img src="images/Network.png" alt="">
+  <p>1. Tap on the Add Network button at the bottom.</p>
+  <img style="width: 50%;" src="images/networkbtn.png" alt="">
+    <p>1. On the page that opens, type in the following details:</p>
+    <p>Network Name: Binance Smart Chain</p>
+    <p>RPC Url: <a href="https://bsc-dataseed.binance.org/">https://bsc-dataseed.binance.org</a></p>
+    <p>Chain ID: 56</p>
+    <p>Symbol: BNB</p>
+    <p>Block Explorer URL: <a href="http://bscscan.com/">http://bscscan.com</a></p>
+    <br>
+    <p>Once you've confirmed entry of the new network, go back to the burger menu and tap Browser.</p>
+    <img src="images/Browser.png" alt="">
+    <br>
+    <p>Type "Pluto" into the search field and start the search. The top result will be the Pluto exchange. Tap to enter it.</p>
+    <p>You wallet will ask you to connect. Tap Connect to connect to Pluto.</p>
+    
+    <hr>
+    <h3>Resources</h3>
+   <p><a href="https://metamask.io/download">Download MetaMask</a> (Automatically detects device)</p>
+<p><a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain)">MetaMask Setup Guide</a><p>
+    
+    
+  
+  
+</div>
+
+<div id="menu6" class="tab-pane fade"><br>
+  
+  <img style="width:50%;" src="images/Token-Pocket.png" alt="">
+  <p>Token Pocket is a cryptocurrency management app that natively supports many cryptocurrency networks. It also has a desktop application available.</p>
+  
+  <h3>Android and iOS</h3>
+  <p>1. Tap the Discover button on the bottom of the main screen.</p>
+  
+  <p>1. You'll see a DApp browser page open. Under "Recommended", find and tap the Pluto button. If you can't see Pluto under Recommended, you can also find it under "BSC".</p>
+  
+  <p>1. A window will open saying that you will be opening a third party DApp. Tap I got it and you'll be taken to Pluto's website connected to your wallet.</p>
+  
+  <br>
+    <p>Resources</p>
+    <p><a href="https://www.tokenpocket.pro/en/download/app">Download Token Pocket App</a> (Automatically detects device)</p>
+    <p>Token Pocket Mobile Setup Guide</p>
+  
+
+
+</div>
+
+<div id="menu7" class="tab-pane fade"><br>
+  
+  
+  <p>SafePal is available as both a software and hardware wallet. The wallet is easy to install and create, and comes ready to support BEP2 (Binance Chain) and BEP20 (Binance Smart Chain) right away.</p>
+  <hr>
+  <h3>Android and iOS</h3>
+  <p>1. Tap the 4 squares icon button on the bottom of the main screen.</p>
+ 
+
+
+  
+  <p>1. You'll see a DApp browser page open. Under "DeFi", find and tap the Pluto button. If you can't see Pluto under DeFi, you can also find it under "BSC".</p>
+  
+  
+  <p>1. A window will open saying that you will be opening a third party DApp. Tap Confirm and you'll be taken to Pluto's website connected to your wallet.</p>
+ 
+  <br>
+    <p>Resources</p>
+    <p><a href="https://safepal.io/download">​Download SafePal</a> (Automatically detects device)</p>
+    <p><a href="https://blog.safepal.io/binance-smart-chain-x-safepal/">SafePal Setup Guide</a></p>
+  
+
+
+</div>
+
+</div>
+
+<hr>
+<h3 id="Desktop">Desktop/Web Browser wallets</h3>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu8">MetaMask</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu9">Binance Wallet</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu10">Token Pocket</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="menu8" class="tab-pane active"><br>
+<img style="width:50%" src="images/metamask.png" alt="">
+<hr>
+<h3>Chrome and Firefox</h3>
+<p>1. Open MetaMask and click on the network selector at the top. By default it will show "Ethereum Mainnet". Scroll down and click Custom RPC.</p>
+
+<p>1. A window will open. Type in the details below.</p>
+<p><strong>Network Name:</strong> Binance Smart Chain</p>
+<p><strong>New RPC URL:</strong> <a href="https://bsc-dataseed.binance.org/">https://bsc-dataseed.binance.org</a></p>
+<p><strong>Chain ID:</strong> 56</p>
+<p><strong>Currency Symbol (optional):</strong> BNB</p>
+<p><strong>Block Explorer URL (optional):</strong> <a href="http://bscscan.com/">http://bscscan.com</a></p>
+
+<p>1. Make sure you've typed everything in correctly and click Save. Binance Smart Chain will now be one of your network options.</p>
+
+<p>1. Visit the Pluto website. In the top right corner you'll see the Connect button. Click it.</p>
+
+<p>1. A window will appear asking you to choose a wallet to connect to. Click MetaMask (it's the top option on the list).</p>
+
+<hr>
+<h3>Resources</h3>
+<p><a href="https://metamask.io/download">Download MetaMask</a> (Automatically detects browser)</p>
+<p><a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain">MetaMask Setup Guide</a></p>
+  
+  
+</div>
+
+<div id="menu9" class="tab-pane fade"><br>
+  
+  <hr>
+  <h3>Chrome and Firefox</h3>
+  <p>1. Open Binance Chain Wallet and click on the network selector at the top. The default network will be Binance Chain. Choose Binance Smart Chain from the list.</p>
+  
+   <p>1. Visit the Pluto website. In the top-right, click Connect.</p>
+   
+   
+   <p>1. A window will appear asking you to choose a wallet to connect to. Click Binance Chain Wallet (it's farther down the list).</p>
+   
+   
+     <hr>
+     <h3>Resources</h3>
+     <p><a href="https://www.binance.org/en">Download Binance Wallet</a> (Automatically detects browser)</p>
+<p><strong>Binance Wallet Setup Guide</strong></p>
+    
+    
+  
+  
+</div>
+
+<div id="menu10" class="tab-pane fade"><br>
+  
+  
+  <hr>
+  
+  <h3>Desktop Application</h3>
+  <p>1. When you open the application, DApps should be the default page (if not, click to the DApps page).</p>
+<p>1.Half way down the page you'll see a list of networks to choose from. Click BSC.</p>
+  
+  <p>1. On the list of BSC DApps, you'll find Pluto links. Click a Pluto link.</p>
+  
+  
+  
+  <blockquote>
+  <p><i class="fa fa-exclamation"></i> Make sure you don't choose the "Pluto data analysis" option. If you do, you will not be able to connect.</p>
+  </blockquote>
+  
+  <p>1. Your browser will open a Pluto tab and attempt to connect to Token Pocket.</p>
+  
+  <blockquote>
+  <p><i class="fa fa-exclamation"></i> You will not be able to use both MetaMask and TokenPocket connecting through the same web browser. Make sure you use a web browser without MetaMask plugin installed if you're using TokenPocket on your desktop computer.</p>
+  </blockquote>
+  
+  <hr>
+  
+<h3>Resources</h3>
+<p><a href="https://www.tokenpocket.pro/en/download/pc">Download Token Pocket Desktop Wallet</a> (MacOS or Win64)</p>
+<p><strong>Token Pocket Desktop Setup Guide</strong></p>
+  
+
+
+</div>
+
+</div>
+
+
+<blockquote style="font-size:18px;">
+<p style="font-size:18px; color:#333;"><i class="fa fa-warning"></i> Remember - NEVER, under any situation, should you ever give someone your private key or recovery phrases.</p>
+</blockquote>
+
+<div class="row">
+<div class="col-md-6">
+    <div class="footerbtn" style="height:75px;">
+        <a href="bep20-guide">
+    	<i class="fa fa-arrow-left" style="margin-top: 15px;"></i>
+    	<span style="font-size: 18px; color:#000000;">
+        <span style="font-size:14px;"> Previous</span>
+        <br>
+        Get BEP20 Tokens
+        </span>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="footerbtn" style="height:75px;">
+        <a href="help">
+    	<span style="font-size: 18px; color:#000000; float:left">
+        <span style="font-size:14px; float:left;">Next</span><br>
+        Click Here for Help
+        </span>
+        <i class="fa fa-arrow-right" style="float:right;margin-top: 15px;"></i>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-2 rightsidebar">
+    <div class="senterbox" style="border-left:1px solid #efefef; padding-left:15px;">
+    
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">
+        <p style="font-weight: 600;"><i class="fa fa-github"></i> Edit on GitHub</p>
+    	<p>Contents</p>
+        <ul>
+            <li><a href="#Smartphone">Smartphone/Mobile</a></li>
+            <li><a href="#Desktop">Desktop/Web Browser wallets</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="js/function.js"></script>
+</body>
+</html>

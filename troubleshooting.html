@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="version" content="1.0">
+<title>Troubleshooting - Pluto</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-3 logo"> <a href="https://www.pluto.ag/"><img src="images/logo.png" alt=""></a> </div>
+    <div class="col-xs-12 col-md-5 Launch-App">
+    
+    </div>
+    <div class="col-xs-12 col-md-4 socialicon">
+      <ul class="social-icons-ql">
+        <li><a href="https://twitter.com/plutodex"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://t.me/pluto_ex"><i class="fa fa-send"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section>
+<div class="col-xs-12 col-md-3 leftsitebar">
+    <div class="nav-side-menu scrollbar" id="style-4"> <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+          <li> <a href="/"> 📝 Pluto Intro</a> </li>
+          <li  data-toggle="collapse" data-target="#tab1" class="collapsed"> 
+          <a href="get-started">🔢 Get Started <span class="arrow"></span></a> 
+          </li>
+          <ul class="sub-menu collapse" id="tab1">
+            <li class="active"><a href="wallet-guide">Create a Wallet</a></li>
+            <li><a href="bep20-guide">Get BEP20 Tokens</a></li>
+            <li><a href="connection-guide">Connect Your Wallet to Pluto</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab2" class="collapsed"> <a href="help"> 📊 Click Here for Help <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse in" id="tab2">
+            <li class="active"><a href="troubleshooting">Troubleshooting Errors</a></li>
+            <li><a href="faq">General FAQ</a></li>
+            <li><a href="unsticking-a-transaction-stuck-as-pending-with-metamask">Fixing Stuck Pending Transactions on MetaMask</a></li>
+            <li><a href="binance-academy-guide">Binance Academy Guide</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab3" class="collapsed"> <a href="contact-us"> 💬 Contact Us <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab3">
+            <li><a href="business-partnerships"> Business Partnerships</a></li>
+            <li ><a href="partnerships"> Partnership</a></li>
+
+            
+            <li><a href="telegram">Social Accounts & Communities</a></li>
+          </ul>
+          
+          <h3 class="sep-title">Products</h3>
+          <li data-toggle="collapse" data-target="#tab4" class="collapsed"> <a href="pluto-Finance">🔄 Exchange <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab4">
+            <li><a href="trade">Token Swaps</a></li>
+            <li><a href="trade-guide">How to Trade</a></li>
+            <li><a href="pluto-Finance">Liquidity Pools</a></li>
+            <li><a href="liquidity-guide">How to Add/Remove Liquidity</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab5" class="collapsed"> <a href="yield-farming">🚜 Yield Farming <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab5">
+            <li><a href="how-to-use-farms">How to Use Farms</a></li>
+            <li><a href="how-to-use-farms-with-bscscan">How to Use Farms with BscScan</a></li>
+          </ul> 
+          
+        <li data-toggle="collapse" data-target="#tab6" class="collapsed"> <a href="syrup-pool">🍯 Pools <span class="arrow"></span></a> </li>
+        <ul class="sub-menu collapse" id="tab6">
+        <li><a href="syrup-pool-guide">How to Stake in Pools</a></li>
+        <li><a href="auto-compounding">Auto PLU Pool</a></li>
+        <li><a href="syrup-pool-faq">Pool FAQ & Troubleshooting</a></li>
+        </ul>
+
+          
+          
+          
+          <li data-toggle="collapse" data-target="#tab11" class="collapsed"> <a href="info">📈 Analytics (Info) <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab11">
+            <li><a href="pluto-analytics">Analytics</a></li>
+          </ul>
+          
+          <h3 class="sep-title">Tokenomics</h3><li data-toggle="collapse" data-target="#tab13" class="collapsed"> <a href="PLU"><img src="images/PLUicon.png"> PLU <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab13">
+            <li><a href="Moonlight-Finance-tokenomics">Moonlight Tokenomics</a></li>
+            
+          </ul>
+          <h3 class="sep-title">DEVELOPERS</h3>
+          <li data-toggle="collapse" data-target="#tab14" class="collapsed"> <a href="smart-contracts">📑 Smart Contracts </a> </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="col-xs-12 col-md-9 center faq">
+<div class="senterbox">
+<h1>Troubleshooting Errors</h1>
+<p>Common error messages. Use the sidebar ➡️to jump to the error you're seeing.</p>
+<hr>
+<img style="width:100%;" src="images/Troubleshooting.png" alt="">
+<p>Sometimes you may find yourself facing a problem that doesn't have a clear solution. These troubleshooting tips may help you solve problems you run into.</p>
+
+<hr>
+
+<h1 id="troubleshooting1">Issues on the Exchange</h1>
+<h3 id="troubleshooting2">INSUFFICIENT_OUTPUT_AMOUNT</h3>
+<blockquote>
+<p>The transaction cannot succeed due to error: PLU Router: INSUFFICIENT_OUTPUT_AMOUNT. This is probably an issue with one of the tokens you are swapping.</p>
+<p>the transaction cannot succeed due to error: execution reverted: PLU Router: insufficient_output_amount.</p>
+</blockquote>
+
+<p>You're trying to swap tokens, but your slippage tolerance is too low or liquidity is too low.</p>
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu4">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu5">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu4" class="tab-pane active"><br>
+<p>1. Refresh your page and try again later.</p>
+<p>2. Try trading a smaller amount at one time.</p>
+<p>3. Increase your slippage tolerance:</p>
+<p style="margin-left:15px;">Tap the settings icon on the liquidity page.</p>
+<p style="margin-left:15px;">Increase your slippage tolerance a little and try again. </p>
+<img style="width:50%;" src="images/settings-icon.png" alt="">
+<p>4. Lastly, try inputting an amount with fewer decimal places.</p>
+</div>
+
+<div id="menu5" class="tab-pane fade">
+  
+<p><strong>This usually happens when trading tokens with low liquidity.</strong></p>
+<p>That means there isn't enough of one of the tokens you're trying to swap in the Liquidity Pool: it's probably a small-cap token that few people are trading.</p>
+<p>However, there's also the chance that you're trying to trade a scam token which cannot be sold. In this case, Plutoisn't able to block a token or return funds.</p>
+  
+  
+</div>
+
+
+
+</div>
+
+
+<h3 id="troubleshooting3">INSUFFICIENT_A_AMOUNT or INSUFFICIENT_B_AMOUNT</h3>
+<blockquote>
+<p>Fail with error 'PLU Router: INSUFFICIENT_A_AMOUNT'</p>
+<p>or</p>
+<p>Fail with error 'PLU Router: INSUFFICIENT_B_AMOUNT'</p>
+</blockquote>
+<p>You're trying to add/remove liquidity from a liquidity pool (LP), but there isn't enough of one of the two tokens in the pair.</p>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu6">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu7">Reason</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu8">Solution for nerds</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu6" class="tab-pane active">
+<p>Refresh your page and try again, or try again later.</p>
+<p>Still doesn't work?</p>
+<p>1. Tap the settings icon on the liquidity page.</p>
+<p>2.Increase your slippage tolerance a little and try again.</p>
+<img style="width:50%;" src="images/settings-icon.png" alt="">
+</div>
+
+<div id="menu7" class="tab-pane fade">
+<p>The error is caused by trying to add or remove liquidity for a liquidity pool (LP) with an insufficient amount of token A or token B (one of the tokens in the pair).</p>
+<p>It might be the case that prices are updating too fast when and your slippage tolerance is too low.</p>
+<img src="images/Reason1.png" alt="">
+<img src="images/Reason2.png" alt="">
+</div>
+
+
+<div id="menu8" class="tab-pane fade">
+<p>OK, so you're really determined to fix this. We really don't recommend doing this unless you know what you're doing.</p>
+<p>There currently isn't a simple way to solve this issue from the Plutowebsite: you'll need to interact with the contract directly. You can add liquidity directly via the Router contract, while setting amountAMin to a small amount, then withdrawing all liquidity.</p>
+<h3>Approve the LP contract</h3>
+<p>Head to the contract of the LP token you're trying to approve.</p>
+<p>For PLU, here's the ETH/WBNB pair: </p>
+<p><a href="https://bscscan.com/address/0x70d8929d04b60af4fb9b58713ebcf18765ade422">https://bscscan.com/address/0x70d8929d04b60af4fb9b58713ebcf18765ade422</a></p>
+<p>1. Select Write Contract, then Connect to Web3 and connect your wallet. </p>
+<img src="images/code.png" alt="">
+<p>2. In section "1. approve", approve the LP token for the router by entering</p>
+<p>1. spender (address): enter the contract address of the LP token you're trying to interact with
+<p>2. value (uint256): -1</p>
+
+<h3>Query "balanceOf"</h3>
+<p>1. Switch to Read Contract.</p>
+<p>2. In 5. balanceOf, input your wallet address and hit Query.</p>
+<p>3. Keep track of the number that's exported. It shows your balance within the LP in the uint256 format, which you'll need in the next step.</p>
+<img style="width:100%;" src="images/blance.png" alt="">
+<h3>Add or Remove Liquidity</h3>
+<p>Head to the router contract: </p>
+<p><a href="https://bscscan.com/address/0x05ff2b0db69458a0750badebc4f9e13add608c7f#writeContract">https://bscscan.com/address/0x05ff2b0db69458a0750badebc4f9e13add608c7f#writeContract</a></p>
+
+<p>1. Select Write Contract and Connect to Web3 as above.</p>
+
+<p>2. Find addLiquidity or removeLiquidity (whichever one you're trying to do)</p>
+
+<p>3. Enter the token addresses of both of the tokens in the LP.</p>
+
+<p>4. In liquidity (uint256), enter the uint256 number which you got from "balanceOf" above.</p>
+
+<p>5. Set a low amountAMin or amountBMin: try 1 for both.</p>
+
+<p>6. Add your wallet address in to (address).</p>
+
+<p>7. Deadline must be an epoch time greater than the time the tx is executed.</p>
+<img style="width:100%;" src="images/amountAMin.png" alt="">
+<blockquote>
+<p>This can cause very high slippage, and can cause the user to lose some funds if frontrun</p>
+</blockquote>
+
+
+
+</div>
+
+
+
+</div>
+
+
+<h3 id="troubleshooting4">PLU Router: EXPIRED</h3>
+<blockquote>
+<p>The transaction cannot succeed due to error: PLU Router: EXPIRED. This is probably an issue with one of the tokens you are swapping.</p>
+</blockquote>
+
+<p>Try again, but confirm (sign and broadcast) the transaction as soon as you generate it.</p>
+<p>This happened because you started making a transaction, but you didn't sign and broadcast it until it was past the deadline. That means you didn't hit "Confirm" quickly enough.</p>
+
+<p id="troubleshooting5">Pluto: K</p>
+<blockquote>
+<p>The transaction cannot succeed due to error: PLU: K. This is probably an issue with one of the tokens you are swapping.</p>
+</blockquote>
+
+<p>Refresh the page and try again, or increase slippage tolerance via the settings icon and try again.</p>
+<p>This probably happened because you're trying to buy or sell tokens during a big price movement. The frontend is getting outdated information (e.g. outAmount) from the smart contract, causing the swap to fail.</p>
+
+<h3 id="troubleshooting6">Pluto: TRANSFER_FAILED</h3>
+<blockquote>
+<p>The transaction cannot succeed due to error: execution reverted: PLU: TRANSFER_FAILED.</p>
+</blockquote>
+
+<p>Make sure you have 30% more tokens in your wallet than you intend to trade, or try to trade a lower amount. If you want to sell the maximum possible, try 70% or 69% instead of 100%.
+Caused by the design of Restorative Rebase tokens like tDoge or tBTC.
+<a href="https://btcst.medium.com/stp-8-restorative-rebase-b4fbbdfd96c">Understand how restorative rebase tokens work.</a></p>
+
+<h3 id="troubleshooting7">Transaction cannot succeed</h3>
+<p>Try trading a smaller amount, or increase slippage tolerance via the settings icon and try again. This is caused by low liquidity.</p>
+
+<h3 id="troubleshooting8">Price Impact too High</h3>
+<p>Try trading a smaller amount, or increase slippage tolerance via the settings icon and try again. This is caused by low liquidity.</p>
+
+<h3 id="troubleshooting9">estimateGas failed</h3>
+<blockquote>
+<p>This transaction would fail. Please contact support</p>
+</blockquote>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu9">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu10">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu9" class="tab-pane active">
+<p>Contact the project team of the token you're trying to swap.</p>
+<p>This issue must be resolved by the project team.</p>
+</div>
+
+<div id="menu10" class="tab-pane fade">
+<p>This issue is caused by tokens which have hard-coded the V1 Plutorouter into their contract.</p>
+<p>While this practice is ill-advised at best, the reason for these projects having done this appears to be due to their tokenomics, in which each purchase sends a % of the token to LPs.</p>
+<p>The projects affected will likely not work with the V2 router: they will most likely need to create new versions of their tokens pointing to our new router address, and migrate any existing token holders to their new token.
+We recommend that any projects which created such tokens should also make efforts to prevent their users from adding them to V2 LP.</p>
+<p>The up-to-date router address is https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E</p>
+</div>
+</div>
+
+
+
+
+<h3 id="troubleshooting10">Cannot read property 'to Hex String' of undefined</h3>
+<blockquote>
+<p>Unknown error: "Cannot read property 'toHexString' of undefined</p>
+</blockquote>
+<p>When trying to swap tokens, the transaction fails and this error message is displayed. This error has been reported on mobile devices using Trust Wallet.</p>
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu11">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu12">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu11" class="tab-pane active">
+<p>1. Attempt the transaction again with increased slippage allowance.</p>
+<p>2. If 1. does not resolve your problem, consider using another wallet such as SafePal for your transaction.</p>
+</div>
+
+<div id="menu12" class="tab-pane fade">
+<p><strong>This usually happens when trading tokens with insufficient slippage allowance on Trust Wallet.</strong></p>
+<p>The exact details of the problem are still being investigated.</p>
+</div>
+</div>
+
+<h3 id="troubleshooting11">Execution reverted: TransferHelper: TRANSFER_FROM_FAILED.</h3>
+<blockquote>
+<p>The transaction cannot succeed due to error: execution reverted: TransferHelper: TRANSFER_FROM_FAILED.</p>
+</blockquote>
+<p>When trying to swap tokens, the transaction fails and this error message is displayed. This error has been reported across platforms.</p>
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu13">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu14">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu13" class="tab-pane active">
+<p>Check to make sure you have sufficient funds available.</p>
+<p>Ensure you have given the contract allowance to spend the amount of funds you're attempting to trade with.</p>
+</div>
+
+<div id="menu14" class="tab-pane fade">
+<p>This error happens when trading tokens with insufficient allowance, or when a wallet has insufficient funds.</p>
+<p>If you're trading tokens with Restorative Rebase like tau assets tDoge or tBTC, make sure you understand how they work first with this guide to Rebase tokens.</p>
+</div>
+</div>
+
+<h3 id="troubleshooting12">Issues with Syrup Pools</h3>
+<p id="troubleshooting13">BEP20: burn amount exceeds balance</p>
+<blockquote>
+<p>Fail with error 'BEP20: burn amount exceeds balance'</p>
+</blockquote>
+<p>You don't have enough SYRUP in your wallet to unstake from the PLU-PLU pool.</p>
+
+
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu15">Solution 1</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu16">Solution 2</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu17">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu15" class="tab-pane active">
+<p><strong>Get at least as much SYRUP as the amount of PLU that you’re trying to unstake.</strong></p>
+<p>Buy SYRUP on the exchange. If you want to unstake 100 PLU, you need at least 100 SYRUP.</p>
+<p>Try unstaking again.</p>
+</div>
+
+<div id="menu16" class="tab-pane fade">
+<p>If that still fails, you can perform an “emergency Withdraw” from the contract directly to unstake your staked tokens.</p>
+<p>1. Go to: <a href="https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E#writeContract">https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E#writeContract</a> </p>
+<p>2. Click "<strong>Connect to Web3</strong>" and connect your wallet</p>
+<img src="images/code.png" alt="">
+<p>3. In section "4. emergency Withdraw", enter "0" and click "Write".</p>
+<p>This will unstake your staked tokens and lose any uncollected PLU yield.</p>
+<blockquote>
+<p><i class="fa fa-exclamation"></i> This will lose any yield that you haven’t harvested yet</p>
+</blockquote>
+</div>
+
+<div id="menu17" class="tab-pane fade">
+<p>To stop this happening again, don’t sell your SYRUP. You still need it to unstake from the “Stake PLU Earn PLU” pool.</p>
+<p>This error has happened because you have sold or transferred SYRUP tokens. SYRUP is minted in a 1:1 ratio to PLU when you stake in the PLU-PLU Syrup Pool. SYRUP must be burned at a 1:1 ratio to PLU when calling leaveStaking (unstaking your PLU from the pool), so if you don't have enough, you can't unstake from the pool.</p>
+<p><strong>Tenderly Dashboard</strong></p>
+<p>Tenderly is an Ethereum monitoring, debugging and analytics platform. It empowers blockchain teams and individuals by providing a powerful Debugger, intuitive Gas Profiler, Transaction Simulations, Monitoring and Alerting capabilities, Advanced Analytics and so much more.</p>
+<img style="width:100% !important;" src="images/masterchif.png" alt="">
+</div>
+
+</div>
+
+
+
+<h3 id="troubleshooting14">Out of Gas error</h3>
+<blockquote>Warning! Error encountered during contract execution [out of gas]</blockquote>
+<p>You have set a low gas limit when trying to make a transaction.</p>
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu18">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu19">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu18" class="tab-pane active">
+<p>Try manually increasing the gas limit (not gas price!) in your wallet before signing the transaction.</p>
+<p>A limit of 200000 is usually enough.</p>
+<img src="images/gas-limit.png" alt="">
+<p>The above PLU is from Metamask; check your wallet's documentation if you aren't sure how to adjust the gas limit.</p>	
+</div>
+
+<div id="menu19" class="tab-pane fade">
+<p>Basically, your wallet (Metamask, Trust Wallet, etc.) can't finish what it's trying to do.</p>
+<p>Your wallet estimates that the gas limit is too low, so the function call runs out of gas before the function call is finished.</p>
+</div>
+
+</div>
+
+
+<h3 id="troubleshooting15">BEP20: transfer amount exceeds allowance</h3>
+<blockquote>
+<p>Fail with error 'BEP20: transfer amount exceeds allowance'</p>
+</blockquote>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu20">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu21">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu20" class="tab-pane active">
+<p>1. Use Unrekt.net to revoke approval for the smart contract you're trying to interact with</p>	
+<p>2. Approve the contract again, without setting a limit on spend allowance</p>	
+<p>3. Try interacting with the contract again.</p>	
+</div>
+
+<div id="menu21" class="tab-pane fade">
+<p>This happens when you set a limit on your spend allowance when you first approved the contract, then try to swap more than the limit.</p>
+</div>
+</div>
+
+
+<h3 id="troubleshooting16">BEP20: transfer amount exceeds balance</h3>
+<blockquote>
+<p>Fail with error 'BEP20: transfer amount exceeds balance'</p>
+
+<p>You're probably trying to unstake from a Syrup Pool with low rewards in it. Solution below.</p>
+<p>If not, you may be trying to send tokens that you don't have in your wallet (for PLU, trying to send a token that is already assigned to a pending transaction). In this case, just make sure you have the tokens you're trying to use.</p>
+</blockquote>
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu22">Solution</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" data-toggle="tab" href="#menu23">Reason</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu22" class="tab-pane active">
+<p>Firstly, let the team know which pool you're trying to unstake from, so they can top up the rewards. If you're in a hurry to unstake and you don't mind losing your pending yield, try an emergency With draw:</p>
+<p>You can perform an “emergencyWithdraw” from the contract directly to unstake your staked tokens.</p>	
+<p>1. Find the contract address of the Syrup Pool you're trying to unstake from. You can find it in your wallet's transaction log.</p>
+<p>2. Go to https://bscscan.com/ and in the search bar, enter the contract address.</p>
+<p>3. Select Write Contract.</p>
+<p>4. Click “Connect to Web3” and connect your wallet.</p>
+<p>5. In section "4. emergency With draw", enter "0" and click "Write".</p>
+<img src="images/code.png" alt="">
+<p>This will unstake your staked tokens and lose any uncollected yield.</p>
+<p><i class="fa fa-exclamation"></i> This will lose any yield that you haven’t harvested yet.</p>
+</div>
+
+<div id="menu23" class="tab-pane fade">
+<p>This happens when you set a limit on your spend allowance when you first approved the contract, then try to swap more than the limit.</p>
+</div>
+</div>
+
+
+<h3 id="troubleshooting17">Other issues</h3>
+<p><strong>Provider Error</strong></p>
+<br>
+<blockquote>
+<p id="troubleshooting18">Provider Error</p>
+<p>No provider was found</p>
+</blockquote>
+<p>This happens when you try to connect via a browser extension like MetaMask or Binance Chain Wallet, but you haven’t installed the extension.</p>
+
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item active">
+  <a class="nav-link" data-toggle="tab" href="#menu23">Solution</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="menu23" class="tab-pane active">
+<p>Install the official browser extension to connect, or read our guide on how to connect a wallet to Pluto.</p>
+</div>
+
+<h3 id="troubleshooting19">Unsupported Chain ID</h3>
+
+<p>Switch your chain to Binance Smart Chain. Check your wallet's documentation for a guide if you need help.</p>
+
+<h3 id="troubleshooting20">Issues buying SAFEMOON and similar tokens</h3>
+<p>To trade SAFEMOON, you must click on the settings icon and set your slippage tolerance to 12% or more.</p>
+<p>This is because SafeMoon taxes a 10% fee on each transaction:</p>
+<p>5% fee = redistributed to all existing holders</p>
+<p>5% fee = used to add liquidity</p>
+
+<p>This is also why you might not receive as much of the token as you expect when you purchase.</p>
+<p>Read more on How to Buy Safe Moon.</p>
+
+<h3 id="troubleshooting21">Internal JSON-RPC errors</h3>
+<blockquote>
+<p>MetaMask - RPC Error: Internal JSON-RPC error. estimateGas failed removeLiquidityETHWithPermitSupportingFeeOnTransferTokens estimateGas failed removeLiquidityETHWithPermit </p>
+</blockquote>
+
+<p>Happens when trying to remove liquidity on some tokens via Metamask. Root cause is still unknown. Try using an alternative wallet.</p>
+
+<blockquote>
+<p>Internal JSON-RPC error. { "code": -32000, "message": "insufficient funds for transfer" } - Please try again.</p>
+</blockquote>
+
+<p>You don't have enough BNB to pay for the transaction fees. You need more BEP-20 network BNB in your wallet.</p>
+
+<h3 id="troubleshooting22">Error: [ethjs-query]</h3>
+<blockquote><p>Error: [ethjs-query] while formatting outputs from RPC '{"value":{"code":-32603,"data":{"code":-32000,"message":"transaction underpriced"}}}"</p></blockquote>
+
+<p>Increase the gas limit for the transaction in your wallet. Check your wallet's documentation to learn how to increase gas limit.</p>
+
+<blockquote><p>Swap failed: Error: [ethjs-query] while formatting outputs from RPC '{"value":{"code":-32603,"data":{"code":-32603,"message":"handle request error"}}}'</p></blockquote>
+
+<p>Cause unclear. Try these steps before trying again:</p>
+
+<p>Increase gas limit</p>
+<p>Increase slippage</p>
+<p>Clear cache</p>
+
+</div>
+
+
+
+<div class="row">
+<div class="col-md-6">
+    <div class="footerbtn" style="height:75px;">
+        <a href="help">
+    	<i class="fa fa-arrow-left" style="margin-top: 15px;"></i>
+    	<span style="font-size: 18px; color:#000000;">
+        <span style="font-size:14px;"> Previous</span>
+        <br>
+        Click Here for Help
+        </span>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="footerbtn" style="height:75px;">
+        <a href="faq">
+    	<span style="font-size: 18px; color:#000000; float:left">
+        <span style="font-size:14px; float:left;">Next</span><br>
+        General FAQ
+        </span>
+        <i class="fa fa-arrow-right" style="float:right;margin-top: 15px;"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<div class="col-xs-12 col-md-2 rightsidebar">
+    <div class="senterbox" style="border-left:1px solid #efefef; padding-left:15px;">
+    
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">
+        <p style="font-weight: 600;"><i class="fa fa-github"></i> Edit on GitHub</p>
+    	<p>Help sections</p>
+        <ul>
+            
+<li><a href="#troubleshooting1">Issues on the Exchange</a></li>
+<li><a href="#troubleshooting2">INSUFFICIENT_OUTPUT_AMOUNT</a></li>
+<li><a href="#troubleshooting3">INSUFFICIENT_A_AMOUNT or INSUFFICIENT_B_AMOUNT</a></li>
+<li><a href="#troubleshooting4">PLU Router: EXPIRED</a></li>
+<li><a href="#troubleshooting5">PLU: K</a></li>
+<li><a href="#troubleshooting6">PLU: TRANSFER_FAILED</a></li>
+<li><a href="#troubleshooting7">Transaction cannot succeed</a></li>
+<li><a href="#troubleshooting8">Price Impact too High</a></li>
+<li><a href="#troubleshooting9">EstimateGas failed</a></li>
+<li><a href="#troubleshooting10">Cannot read property 'toHexString' of undefined</a></li>
+<li><a href="#troubleshooting11">Execution reverted: TransferHelper: TRANSFER_FROM_FAILED.</a></li>
+<li><a href="#troubleshooting12">Issues with Syrup Pools</a></li>
+<li><a href="#troubleshooting13">BEP20: burn amount exceeds balance</a></li>
+<li><a href="#troubleshooting14">Out of Gas error</a></li>
+<li><a href="#troubleshooting15">BEP20: transfer amount exceeds allowance</a></li>
+<li><a href="#troubleshooting16">BEP20: transfer amount exceeds balance</a></li>
+<li><a href="#troubleshooting17">Other issues</a></li>
+<li><a href="#troubleshooting18">Provider Error</a></li>
+<li><a href="#troubleshooting19">Unsupported Chain ID</a></li>
+<li><a href="#troubleshooting20">Issues buying SAFEMOON and similar tokens</a></li>
+<li><a href="#troubleshooting21">Internal JSON-RPC errors</a></li>
+<li><a href="#troubleshooting22">Error: [ethjs-query]</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="js/function.js"></script>
+</body>
+</html>

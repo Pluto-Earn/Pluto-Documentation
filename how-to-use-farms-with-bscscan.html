@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="version" content="1.0">
+<title>How to use Farms with Bscscan - Pluto</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-3 logo"> <a href="https://www.pluto.ag/"><img src="images/logo.png" alt=""></a> </div>
+    <div class="col-xs-12 col-md-5 Launch-App">
+    
+    </div>
+    <div class="col-xs-12 col-md-4 socialicon">
+      <ul class="social-icons-ql">
+        <li><a href="https://twitter.com/plutodex"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://t.me/pluto_ex"><i class="fa fa-send"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section>
+<div class="col-xs-12 col-md-3 leftsitebar">
+    <div class="nav-side-menu scrollbar" id="style-4"> <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+          <li> <a href="/"> 📝 Pluto Intro</a> </li>
+          <li  data-toggle="collapse" data-target="#tab1" class="collapsed"> 
+          <a href="get-started">🔢 Get Started <span class="arrow"></span></a> 
+          </li>
+          <ul class="sub-menu collapse" id="tab1">
+            <li class="active"><a href="wallet-guide">Create a Wallet</a></li>
+            <li><a href="bep20-guide">Get BEP20 Tokens</a></li>
+            <li><a href="connection-guide">Connect Your Wallet to Pluto</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab2" class="collapsed"> <a href="help"> 📊 Click Here for Help <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab2">
+            <li><a href="troubleshooting">Troubleshooting Errors</a></li>
+            <li><a href="faq">General FAQ</a></li>
+            <li><a href="unsticking-a-transaction-stuck-as-pending-with-metamask">Fixing Stuck Pending Transactions on MetaMask</a></li>
+            <li><a href="binance-academy-guide">Binance Academy Guide</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab3" class="collapsed"> <a href="contact-us"> 💬 Contact Us <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab3">
+            <li><a href="business-partnerships"> Business Partnerships</a></li>
+            <li ><a href="partnerships"> Partnership</a></li>
+
+            
+            <li><a href="telegram">Social Accounts & Communities</a></li>
+          </ul>
+          
+          <h3 class="sep-title">Products</h3>
+          <li data-toggle="collapse" data-target="#tab4" class="collapsed"> <a href="pluto-Finance">🔄 Exchange <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab4">
+            <li><a href="trade">Token Swaps</a></li>
+            <li><a href="trade-guide">How to Trade</a></li>
+            <li><a href="pluto-Finance">Liquidity Pools</a></li>
+            <li><a href="liquidity-guide">How to Add/Remove Liquidity</a></li>
+          </ul>
+          <li data-toggle="collapse" data-target="#tab5" class="collapsed"> <a href="yield-farming">🚜 Yield Farming <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse in" id="tab5">
+            <li><a href="how-to-use-farms">How to Use Farms</a></li>
+            <li class="active"><a href="how-to-use-farms-with-bscscan">How to Use Farms with BscScan</a></li>
+          </ul>
+          
+        <li data-toggle="collapse" data-target="#tab6" class="collapsed"> <a href="syrup-pool">🍯 Pools <span class="arrow"></span></a> </li>
+        <ul class="sub-menu collapse" id="tab6">
+        <li><a href="syrup-pool-guide">How to Stake in  Pools</a></li>
+        <li><a href="auto-compounding">Auto PLU Pool</a></li>
+        <li><a href="syrup-pool-faq"> Pool FAQ & Troubleshooting</a></li>
+</ul>
+
+          <li data-toggle="collapse" data-target="#tab11" class="collapsed"> <a href="info">📈 Analytics (Info) <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab11">
+            <li><a href="pluto-analytics">Analytics</a></li>
+          </ul>
+          
+          <h3 class="sep-title">Tokenomics</h3><li data-toggle="collapse" data-target="#tab13" class="collapsed"> <a href="PLU"><img src="images/PLUicon.png"> PLU <span class="arrow"></span></a> </li>
+          <ul class="sub-menu collapse" id="tab13">
+            <li><a href="Moonlight-Finance-tokenomics">Moonlight Tokenomics</a></li>
+            
+          </ul>
+          <h3 class="sep-title">DEVELOPERS</h3>
+          <li data-toggle="collapse" data-target="#tab14" class="collapsed"> <a href="smart-contracts">📑 Smart Contracts </a> </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="col-xs-12 col-md-9 center">
+<div class="senterbox">
+<h1>How to Use Farms with BscScan</h1>
+<hr>
+<img style="width:100%;" src="images/BscScan.png" alt="">
+
+<p>Since it requires several steps, using Farms with Pluto can seem intimidating at first. This guide will walk you through using the Farms contract directly through BscScan.</p>
+
+<blockquote>
+<p><i class="fa fa-exclamation"></i> Please understand that using BscScan to interact with contracts is not recommended for beginners. If you're not feeling confident, we suggest using the How to Use Farms guide instead.</p>
+</blockquote>
+<hr>
+<h3 id="Getting1">Finding Farm process identifier</h3>
+<p>To interact correctly with the farming smart contract, you’ll need the matching process identifier (PID) for your LP pair. For now, the easiest way to locate this is to check GitHub.</p>
+
+<p>1. Open the Pluto website’s Farms code on GitHub.</p>
+<p>2. Control/command + F and search for your pair by ticker (not project name). For exPLU, 'PLU-BUSD'.</p>
+<img style="width:50%;" src="images/paid.png" alt="">
+
+<p>3. Write down or copy the PID number—in this case 389—somewhere you can access it easily. You'll need this later.</p>
+<hr>
+<h3 id="Getting2">Depositing LP Tokens through BscScan</h3>
+<p>There are a few things involved in depositing LP Tokens using BscScan. We've broken it down into steps to make it easier to follow along.</p>
+
+
+<h3 id="Getting3">Getting the Main Staking Contract address</h3>
+<p>The address for the main staking contract is: <br>
+0x73feaa1eE314F8c655E354234017bE2193C9E24E</p>
+<p>But assuming you'd like to confirm that, visit the Pluto: Main Staking Contract BscScan page. You'll see the address in the top-left. Click the pages icon to copy this to clipboard. You'll need it soon.</p>
+
+<img style="width:50%;" src="images/contarct.png" alt="">
+<h3 id="Getting4">Open the contract for your LP Token</h3>
+<p>You'll need to approve the smart contract for the LP Token you wish to commit to a farm before you can spend it.</p>
+
+<h3 id="Getting5">From the source code</h3>
+<p>1. First, open farms.ts on GitHub.</p>
+<p>2. Control/command + F and search for your pair by ticker (not project name). For exPLU, 'PLU-BNB'</p>
+<img style="width:50%;" src="images/PLU-bnb.png" alt="">
+
+<p>3. When you have the code for the LP pair you're looking for up, find the address after "56:". This will be your contract address.</p>
+<img style="width:50%;" src="images/bnb-contracr.png" alt="">
+
+<h3 id="Getting6">From the UI</h3>
+<p>1. First, visit the Pluto Farms page and search for your chosen pair using the "SEARCH" field in the top right. We're using PLU-BUSD for this exPLU.
+</p>
+<img style="width:50%;" src="images/first.png" alt="">
+
+<p>2. Click Details to expand the row to show more information.</p>
+<img style="width:50% ;" src="images/PLU-busd.png" alt="">
+
+<p>3. Click View Contract to open the smart contract on BscScan.</p>
+<img style="width:50%;" src="images/View-Contract.png" alt="">
+
+<h3 id="Getting7">Giving permission to the LP Token contract</h3>
+<p>Now that you have your LP Token's contract open on BscScan, you're going to approve the spending of your LP Tokens into the Farm.</p>
+
+<p>1. On the LP Token's contract page, go to Contract, and then Write Contract.</p>
+<img style="width:50% ;" src="images/LP-Token's.png" alt="">
+
+<p>Click Connect to Web3 to connect MetaMask.</p>
+<img src="images/conet.png" alt="">
+
+<p>Confirm the connection.</p>
+<p>3. Under function 1, “approve”, you’ll see “spender:address”. Paste in the Main Staking Contract’s contract address you copied to clipboard earlier.</p>
+<img style="width:50% ;" src="images/approve1.png" alt="">
+
+<p>5. You’re also going to need to approve the amount of LP Tokens the contract can spend. In the value field, you’ll need to enter the amount in Wei. You can use the BscScan Unit Converter to easily change your amount into Wei. Here we'll use 5 PLU-BUSD LP Tokens.</p>
+<img style="width:50% ;" src="images/approve2.png" alt="">
+
+<blockquote>
+<i class="fa fa-exclamation"></i>
+You can also use -1 as the value to give unlimited spend approval. This does not mean you will spend everything by default, but only that a transaction of any size using this contract will be allowed by your wallet.
+</blockquote>
+
+<p>6. Click Write and accept the action in your MetaMask wallet. You’re now able to commit LP Tokens to the Farm up to the amount you’ve approved.</p>
+
+<h3 id="Getting8">Deposit LP Tokens with the Main Staking Contract smart contract</h3>
+
+<p>With the Main Staking Contract now approved to spend your LP Tokens, it's time to make a deposit.</p>
+<p>1. Back on the Pluto: Main Staking Contract BscScan page, go to Contract, and then Write Contract.</p>
+<img style="width:50% ;" src="images/dd.png" alt="">
+<p>2. Click Connect to Web3 to connect MetaMask.</p>
+<p>3. Scroll to function 2, "deposit", and type your PID into the "_pid" field.</p>
+<img src="images/depo.png" alt="">
+
+<p>If you didn't copy down your PID earlier, you can learn how to get it in the Finding Farm process identifier section higher up this page.</p>
+
+<p>4. Underneath _pid you'll see "_amount". Enter the amount for the LP contract to spend that you approved earlier.</p>
+
+<img style="width:50% ;" src="images/dep.png" alt="">
+
+<p>5. Check the information and click Write. Confirm your action in MetaMask.</p>
+<img src="images/write.png" alt="">
+
+<p>6. You can confirm your deposit worked by clicking View your transaction.</p>
+<img src="images/viewbtn.png" alt="">
+
+
+<h3 id="Getting9">Withdrawing from a Pool</h3>
+<p>Withdrawing your LP Tokens from a Pool is very similar to making a deposit. The difference is which function you'll interact with.</p>
+<p>1. Back on the Pluto: Main Staking Contract BscScan page, go to Contract, and then Write Contract.</p>
+<img style="width:80%;" src="images/write2.png" alt="">
+
+<p>2. Click Connect to Web3 to connect MetaMask.</p>
+
+<p>3. Scroll all the way down to function 15, "withdraw", and type your PID into the "_pid" field.</p>
+<img src="images/widra.png" alt="">
+
+<p>If you didn't copy down your PID earlier, you can learn how to get it in the Finding Farm process identifier section higher up this page.</p>
+<p>4. Underneath _pid you'll see "_amount". Enter the amount of LP you'd like to withdraw from the Pool.</p>
+<img src="images/ipd.png" alt="">
+
+<p>5. Check the information and click Write. Confirm your action in MetaMask.</p>
+<img src="images/write.png" alt="">
+
+<p>You can confirm your withdrawal worked by clicking View your transaction.</p>
+<img src="images/viewbtn.png" alt="">
+<hr>
+
+<h3 id="Getting10">Making an emergency withdrawal</h3>
+<p>‌Using the emergency withdraw function allows you to draw all your funds out of a pool when no other way is working.</p>
+<blockquote>
+<p><i class="fa fa-warning"></i> Using the emergency withdraw function will forfeit your PLU rewards!
+The Pluto team strongly suggests avoiding this function unless advised to do so officially by the Pluto team, or if you are very comfortable interacting with smart contracts and understand the underlying code.</p>
+</blockquote>
+
+<p>‌1. On the Pluto: Main Staking Contract BscScan page, go to Contract, and then Write Contract.</p>
+<img style="width:80%;" src="images/Write-Contract.png" alt="">
+
+<p>‌2. Click Connect to Web3 to connect MetaMask.</p>
+<img src="images/conet.png" alt="">
+
+<p>Scroll down to function 4, "emergencyWithdraw", and type your PID into the "_pid" field.</p>
+<img src="images/em.png" alt="">
+
+<p>If you didn't copy down your PID earlier, you can learn how to get it in the Finding Farm process identifier section higher up this page.</p>
+<p>5. Check the information and click Write. Confirm your action in MetaMask.</p>
+<img src="images/write.png" alt="">
+<p>6. You can confirm your withdrawal worked by clicking View your transaction.</p>
+<img src="images/viewbtn.png" alt="">
+
+<div class="row">
+<div class="col-md-6">
+    <div class="footerbtn" style="height:75px;">
+        <a href="how-to-use-farms-with-bscscan">
+    	<i class="fa fa-arrow-left" style="margin-top: 15px;"></i>
+    	<span style="font-size: 18px; color:#000000;">
+        <span style="font-size:14px;"> Previous</span>
+        <br>
+        How to Use Farms with BscScan
+        </span>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="footerbtn" style="height:75px;">
+        <a href="info">
+    	<span style="font-size: 18px; color:#000000; float:left">
+        <span style="font-size:14px; float:left;">Next</span><br>
+        Analytics (Info)
+        </span>
+        <i class="fa fa-arrow-right" style="float:right;margin-top: 15px;"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-xs-12 col-md-2 rightsidebar">
+    <div class="senterbox" style="border-left:1px solid #efefef; padding-left:15px;">
+    
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">
+        <p style="font-weight: 600;"><i class="fa fa-github"></i> Edit on GitHub</p>
+            <p>CONTENTS</p>
+            <ul>
+                <li><a href="#Getting1">Finding Farm process identifier</a></li>
+                <li><a href="#Getting2">Depositing LP Tokens through BscScan</a></li>
+                <li><a href="#Getting3">Getting the Main Staking Contract address</a></li>
+                <li><a href="#Getting4">Open the contract for your LP Token</a></li>
+                <li><a href="#Getting5">From the source code</a></li>
+                <li><a href="#Getting6">From the UI</a></li>
+                <li><a href="#Getting7">Giving permission to the LP Token contract</a></li>
+                <li><a href="#Getting8">Deposit LP Tokens with the Main Staking Contract smart contract</a></li>
+                <li><a href="#Getting9">Withdrawing from a Pool</a></li>
+                <li><a href="#Getting10">Making an emergency withdrawal</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="js/function.js"></script>
+</body>
+</html>
